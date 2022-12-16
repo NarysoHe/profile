@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+
+
+/* HOME PAGE */
+
+header{
+	border-top: 10px solid #212121;
+	background-color: #edf8ed;
+}
+
+h1{
+	font-family: 'Lora';
+	text-align: center;
+	color: #A569BD;
+}
+
+h2{
+	color: #A569BD;
+}
+
+.logo-12{
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+}
+
+.home-hero{
+	min-height: 300px;
+	background-image: url(images/alien-banner.jpg);
+	background-size: cover;	
+	background-position: center;
+	padding-top: 10px;
+}
+
+.hero-text{
+	word-spacing: 5px;
+}
+
+.home-hero h1{
+	color: #e6e600;
+	text-align: left;
+	font-weight: bold;
+	font-size: 37px;
+	text-transform: uppercase;
+	padding: 12px;
+	text-shadow: 1px 2px 4px black;
+	animation-name: moves;
+	animation-duration: 5s;
+}
+
+
+@keyframes moves{
+	from {
+		transform: translateX(800px);
+	}
+
+	to{
+		transform: translateX(0px);
+	}
+
+	0% {opacity: 0;}
+	
+	100% {opacity: 1;}
+}
+
+body{
+	font-family: 'Esteban';
+	word-spacing: 2px;
+	margin: 0;
+	color: white;
+	background-color: #212121;
+	overflow-x: hidden;
+}
+
+nav{
+	background-color: #A9DFBF;
+	border-top: 2px solid #1E8449;
+	border-bottom: 2px solid #1E8449;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Esteban';
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 10px;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	text-decoration: none;
+	padding-right: 30px;
+}
+
+a:link{
+	color: black;
+}
+
+a:visited{
+	color: black;
+}
+
+a:hover{
+	color: #A569BD;
+	text-decoration: none;
+}
+
+a:active{
+	color: white;
+}
+
+main{
+	margin: 30px auto;
+	max-width: 1200px;
+}
+
+.green-tea{
+	margin-top: 10px;
+	display: block;
+	border-radius: 25px;
+	box-shadow: 3px 3px 10px white;
+}
+
+.big-icons i.fa{
+	font-size: 80px;
+	color: #FFD124;
+}
+
+.big-icons{
+	text-align: center;
+}
+
+blockquote{
+	text-align: center;
+	word-spacing: 3px;
+}
+
+.music{
+	text-align: center;
+}
+
+button{
+	box-shadow: inset 0px 1px 4px 0px black;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	border: 1px solid black;
+	display: inline-block;
+	color: black;
+	font-family: 'Esteban';
+	font-size: 15px;
+	word-spacing: 3px;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+button:active{
+	position: relative;
+	top: 1px;
+}
+
+button:hover{
+	background-color: #A9DFBF;
+}
+
+hr{
+	border: 7px dotted #1E8449;
+	border-bottom: none;
+	width: 4%;
+	margin: 100px auto;
+}
+
+.lilac :hover{
+	opacity: .8;
+}
+
+.red-lamps :hover{
+	opacity: .8;
+}
+
+
+
+
+/* RESUME PAGE */
+
+.fade{
+	animation-name: fade-in;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-in{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+.resume h1{
+	font-weight: bold;
+	text-align: center;
+	color: black;
+	font-family: 'Esteban';
+}
+
+.resume h3{
+	font-weight: bold;
+}
+
+.dates{
+	float: right;
+}
+
+.resume{
+	border: 1px solid black;
+	box-shadow: 3px 3px 30px white;
+	margin: 30px auto;
+	padding: 40px 60px;
+	max-width: 900px;
+	background-color: #f2f2f2;
+	color: black;
+}
+
+.resume a:link{
+	color: #A569BD;
+	font-weight: bold;	
+}
+
+.resume a:hover{
+	color: #1E8449;
+}
+
+
+
+
+/* WORKS PAGE */
+
+.screen-shot{
+	box-shadow: 2px 2px 20px white;
+	padding: 5px;
+}
+
+.screen-shot:hover{
+	opacity: .8;
+}
+
+
+
+
+/* JAVASCRIPT PAGE */
+
+canvas{
+	background-image: url(images/magicalforest.jpg);
+	background-size: cover;
+	background-position: center;
+	margin: 30px auto;
+	display: block;
+	border: 1px solid #3AD3CD;
+	box-shadow: 3px 3px 50px #3AD3CD;
+	border-radius: 10px;
+}
+
+.center-text{
+	text-align: center;
+	word-spacing: 3px;
+	font-family: 'Lora';
+	font-size: 20px;
+	font-weight: bold;
+	color: #e6e600;
+}
+
+.game-controls{
+	margin-top: 30px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.myButton{
+	box-shadow: inset 0px 1px 4px 0px black;
+	background-color: whitesmoke;
+	border-radius: 5px;
+	border: 1px solid black;
+	display: inline-block;
+	color: black;
+	font-family: 'Lora';
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 20px;
+}
+
+.myButton:active{
+	position: relative;
+	top: 1px;
+}
+
+.myButton:hover{
+	background-color: #A9DFBF;
+}
+
+.mobile{
+	display: none;
+}
+
+
+
+
+/* FOOTER DETAILS */
+
+footer{
+	text-align: center;
+	border-top: 2px solid #1E8449;
+	background-color: #A9DFBF;
+	display: block;
+	margin: 40px 0 0 0;
+}
+
+.footer-bottom{
+	background-color: #212121;
+	color: #e6e600 ;
+	text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.foot-text{
+	text-decoration: underline;
+	color: #e6e600;
+}
+
+.foot-text a{
+	color: #e6e600;
+}
+
+.icons .fa{
+	font-size: 35px;
+	padding: 40px auto;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+footer a:link{
+    color: black;
+}
+
+footer a:hover{
+	color: #A569BD;
+}
+
+footer a:active{
+	color: white;
+}
+
+
+
+
+
+
+
+
+/*CSS Adjustments for Tablets*/
+
+@media only screen and (max-width: 1024px){
+
+}
+
+
+
+
+
+
+/*CSS Adjustments for Smartphones*/
+
+@media only screen and (max-width: 768px){
+
+	
+
+/*JavaScript Game changes for mobile*/
+	.desktop{
+		display: none;
+	}
+
+	.mobile{
+		display: block;
+		touch-action: manipulation;
+	}
+
+	@keyframes moves{
+		from {
+			transform: translateX(350px);
+		}
+
+		to{
+			transform: translateX(0px);
+		}
+
+		0%{opacity: 0;}
+	
+		100%{opacity: 1;}
+	}
+
+
+}
+
+
